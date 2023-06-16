@@ -1,0 +1,15 @@
+<div class="main-login">
+    <div class="container">
+        <div class="login ">
+            <div class="illustration"><img src="/static/images/illustration.png" alt=""></div>
+            <div class="form-login">        
+                <strong>Fazer Login</strong>
+                <form method='POST'>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type='submit' id="click_login" class="btn-login">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>

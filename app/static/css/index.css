@@ -35,18 +35,6 @@ header .navbar .links .login:hover {
     border: 2px solid rgb(48, 190, 247);
     color: rgb(48, 190, 247);
 }
-header .navbar .links .register{
-    border: 2px solid white;
-    padding: 15px;
-    border-radius: 25px;
-    background-color: white;
-    color: #F67D1A;
-    text-align: center;
-}
-header .navbar .links .register:hover {
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-}
+
 
   

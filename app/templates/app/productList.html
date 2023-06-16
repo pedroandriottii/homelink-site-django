@@ -6,6 +6,25 @@
     <title>Home Link</title>
 </head>
 <body>
-    
+    <p>PRODUCT LIST</p>
+    <a href="{% url 'logout' %}">Sair</a>
+    <div class="left-content">
+        <div class="content-table">
+            <div class="table-head">
+                <p>Item</p>
+                <p>Quantidade</p>
+                <p>Ações</p>
+            </div>
+            <div class="content">
+                {% for product in productss %}
+                    <div class="product">
+                        <p class="name">{{product.name}}</p>
+                        <p>{{product.quantity}}</p>
+                        <a class="look" href="{% url 'product' product.id %}">Ver</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>    
+    </div>
 </body>
 </html>
