@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/base.css">
+    <!-- link do javascript -->
+    <script src="/static/js/navbar.js" defer></script>
     {% block css %}
     {% endblock css %}
     <title>Home Link</title>
@@ -13,16 +15,23 @@
 <body>
     <header>
         <div class="navbar">
-            <a href="{% url 'home' %}"><img class='logo' src="/static/images/logo.png" alt="Logo da Home Link" style="width: 242px"></a>
-            <div class="links">
-                <a href="{% url 'home' %}">Home</a>
-                <a href="{% url 'about' %}">Sobre Nós</a>
-                <a href="{% url 'services' %}">Nossos Serviços</a>
-                <a class="login" href="{% url 'login' %}">Login</a>
+            <div class="top-section">
+                <a href="{% url 'home' %}"><img class='logo' src="/static/images/logo.png" alt="Logo da Home Link" style="width: 242px"></a>
+                <div id="hamburger-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="navbar-links" class="links">
+                <a class="link" href="{% url 'home' %}">Home</a>
+                <a class="link" href="{% url 'about' %}">Sobre Nós</a>
+                <a class="link" href="{% url 'services' %}">Nossos Serviços</a>
+                <a class="link login" href="{% url 'login' %}">Login</a>
             </div>
         </div>
     </header>
-    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5581988145903" target="_blank"><img src="/static/images/whatsapp.svg" alt="Logomarca do Whatsapp"></a>
+    <!-- <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5581988145903" target="_blank"><img src="/static/images/whatsapp.svg" alt="Logomarca do Whatsapp"></a>
     {% block content %}
     {% endblock content %}
     <footer>
@@ -33,6 +42,6 @@
             <a href="https://www.youtube.com/channel/UCG8HEQtOkX9-PN-z6Or4Gyg" target="_blank"><img src="/static/images/youtube.svg" alt="Logomarca do Youtube"></a>
         </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
