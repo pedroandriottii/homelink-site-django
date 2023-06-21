@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    {% block css %}
+    {% endblock css %}
+    <title>Home Link</title>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="{% url 'home' %}"><img class='logo' src="/static/images/logo.png" alt="Logo da Home Link" style="width: 242px"></a>
+            <div class="links">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">Sobre Nós</a>
+                <a href="{% url 'services' %}">Nossos Serviços</a>
+                <a class="login" href="{% url 'login' %}">Login</a>
+            </div>
+        </div>
+    </header>
+    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5581988145903" target="_blank"><img src="/static/images/whatsapp.svg" alt="Logomarca do Whatsapp"></a>
+    {% block content %}
+    {% endblock content %}
+    <footer>
+        <div class = "footer-content">
+        <p>2023 HOME LINK</p>
+        <div class="social">
+            <a href="https://www.instagram.com/homelinkbr/" target="_blank"><img src="/static/images/instagram.svg" alt="Logomarca do instagram"></a>
+            <a href="https://www.youtube.com/channel/UCG8HEQtOkX9-PN-z6Or4Gyg" target="_blank"><img src="/static/images/youtube.svg" alt="Logomarca do Youtube"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

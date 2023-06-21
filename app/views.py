@@ -9,6 +9,13 @@ def home(request):
     context = {'home' : True}
     return render(request, 'app/index.html', context)
 
+def about(request):
+    context = {'about': True}
+    return render(request, 'app/about.html', context)
+
+def services(request):
+    context = {'services': True}
+    return render(request, 'app/services.html', context)
 def loginView(request):
     if request.user.is_authenticated:
         return redirect('dashboard')

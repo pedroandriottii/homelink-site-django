@@ -1,15 +1,33 @@
-<div class="main-login">
-    <div class="container">
-        <div class="login ">
-            <div class="illustration"><img src="/static/images/illustration.png" alt=""></div>
-            <div class="form-login">        
-                <strong>Fazer Login</strong>
-                <form method='POST'>
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type='submit' id="click_login" class="btn-login">Entrar</button>
-                </form>
-            </div>
+{% extends 'app/base.html' %}
+{% block css %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/css/reset.css">
+<link rel="stylesheet" href="/static/css/index.css">
+<link rel="stylesheet" href="/static/css/login.css">
+{% endblock css %}
+{% block content %}
+<body>
+    <article>
+        <img class="login-image" src="/static/images/login.svg" alt="">
+        <div class="form-login">
+            <strong>Login</strong>
+            <form method='POST'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" id="click_login" class="btn-login">Entrar</button>
+            </form>
         </div>
-    </div> 
-</div>
+    </article>
+    <footer>
+        <div class = "footer-content">
+        <a href="{% url 'home' %}"><img class='logo' src="/static/images/logo.png" alt="Logo da Home Link" style="width: 242px"></a>
+        <p>Todos os Direitos Reservados</p>
+        <div class="social">
+            <a href="https://www.instagram.com/homelinkbr/" target="_blank"><img src="/static/images/instagram.svg" alt="Logomarca do instagram"></a>
+            <a href="https://www.youtube.com/channel/UCG8HEQtOkX9-PN-z6Or4Gyg" target="_blank"><img src="/static/images/youtube.svg" alt="Logomarca do Youtube"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+{% endblock content %}

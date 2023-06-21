@@ -1,0 +1,19 @@
+*{
+    overflow: hidden;
+}
+body article{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+body article img{
+    width: 357px;
+    height: 343px;
+}
+body article .form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

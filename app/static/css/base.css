@@ -1,0 +1,91 @@
+/* MOBILE */
+
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {  
+    footer .footer-content{
+        background-color: #F5F5F5;
+    }
+    header .navbar{
+        background-color: #132945;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 80px;
+        height: 70px;
+    }
+    
+    header .navbar .links{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    header .navbar .links a{
+        color: white;
+        font-weight: bold;
+        font-family: 'Amiko', sans-serif;
+    }
+    
+    header .navbar .links .login,
+    header .navbar .links .register{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+    
+    header .navbar .links .login{
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 15px;
+        color: white;
+    }
+    header .navbar .links .login:hover {
+        border: 2px solid rgb(48, 190, 247);
+        color: rgb(48, 190, 247);
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E0E0E0;
+      }
+      
+      .logo {
+        width: 168;
+        height: 18;
+      }
+      
+      .social {
+        margin-left: 20px;
+      }
+      
+      .social a:not(:last-child) {
+        margin-right: 10px;
+      }
+      
+    
+    body .whatsapp{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25D366;
+        border-radius: 50px;
+        text-align: center;
+        font: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+    
+    footer .footer-content{
+        background-color: #a9a9aa;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 80px;
+        height: 70px;
+    }
+}
