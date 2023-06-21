@@ -16,8 +16,9 @@ section .head h1{
     color: #FFF;
     text-align: right;
     font-size: 20px;
-    font-family: MorrisSansW01-Medium;
-    text-decoration: underline;
+    text-transform: uppercase;
+    border-bottom: 2px solid #66CCFF;
+    padding-bottom: 8px;
 }
 
 /* CARDS */
@@ -37,16 +38,16 @@ section .card h3{
     margin-top: 16px;
     color: #153764;
     text-align: justify;
-    font-family: 'Amiko', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 section .card p{
-    color: #153764C2;
+    color: #153764;
     margin: 8px 60px 0px 60px;
     text-align: center;
     font-size: 16px;
-    font-family: 'Amiko', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
