@@ -1,0 +1,52 @@
+/* MOBILE */
+
+section .head{
+    display: flex;
+    background-color: #132945;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+section .head img{
+    transform: translateY(20px);
+}
+
+section .head h1{
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-family: MorrisSansW01-Medium;
+    text-decoration: underline;
+}
+
+/* CARDS */
+section .card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+section .card img{
+    width: 168px;
+    height: 177px;
+    border-radius: 15px;
+}
+section .card h3{
+    margin-top: 16px;
+    color: #153764;
+    text-align: justify;
+    font-family: 'Amiko', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+section .card p{
+    color: rgba(21, 55, 100, 0.76);
+    margin: 8px 60px 0px 60px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Amiko', sans-serif;
+}
