@@ -44,7 +44,7 @@ section .card h3{
 }
 
 section .card p{
-    color: rgba(21, 55, 100, 0.76);
+    color: #153764C2;
     margin: 8px 60px 0px 60px;
     text-align: center;
     font-size: 16px;
